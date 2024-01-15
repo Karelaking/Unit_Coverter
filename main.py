@@ -4,6 +4,7 @@ import customtkinter as ttk
 Converter = ttk.CTk()
 Converter.title("Unit Converter")
 Converter.geometry("700x500")
+Converter.wm_iconbitmap('assets/logo.ico')
 Converter.resizable(False, False)
 Converter.config(bg="black")
 
@@ -44,6 +45,7 @@ inputTwo.focus()
 
 
 def converter():
+
     if combobox1.get() == "inch" and combobox2.get() == "cm":
         Input2.insert(0, int(value1.get()) * 2.54)
     elif combobox1.get() == "inch" and combobox2.get() == "fit":
@@ -52,8 +54,18 @@ def converter():
         Input2.insert(0, int(value1.get()) / 39.37)
     elif combobox1.get() == "inch" and combobox2.get() == "mm":
         Input2.insert(0, int(value1.get()) / 25.4)
+    elif combobox1.get() == "inch" and combobox2.get() == "km":
+        Input2.insert(0, int(value1.get()) / 39370)
+    elif combobox1.get() == "inch" and combobox2.get() == "yard":
+        Input2.insert(0, int(value1.get()) / 36)
+    elif combobox1.get() == "inch" and combobox2.get() == "mile":
+        Input2.insert(0, int(value1.get()) / 63360)
+    elif combobox1.get() == "inch" and combobox2.get() == "dm":
+        Input2.insert(0, int(value1.get()) / 3.937)
     elif combobox1.get() == "inch" and combobox2.get() == "nm":
-        Input2.insert(0, int(value1.get()) / 2.54)
+        Input2.insert(0, int(value1.get()) * 25400000)
+    elif combobox1.get() == "inch" and combobox2.get() == "micro":
+        Input2.insert(0, int(value1.get()) / 25400)
 
 
 ttk.CTkButton(Converter, text="Convert", font=("", 32, "bold"), bg_color="black", command=converter).pack(pady=20,
