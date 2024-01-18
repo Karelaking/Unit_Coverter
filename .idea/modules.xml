@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Unit Coverter.iml" filepath="$PROJECT_DIR$/.idea/Unit Coverter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Unit Converter.iml" filepath="$PROJECT_DIR$/.idea/Unit Converter.iml" />
     </modules>
   </component>
 </project>

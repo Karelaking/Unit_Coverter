@@ -32,7 +32,7 @@ you can skip this step if you have already installed the python and git.
 
 - **Go to the project folder**
 ```bash
-cd Unit Coverter
+cd Unit Converter
 ```
 
 - **install requirements for the unit converter**
@@ -40,9 +40,9 @@ cd Unit Coverter
 pip install -r requirements.txt
 ```
 
-- **Run Unit_Coverter.py**
+- **Run Unit_Converter.py**
 ```bash
-python3 Unit_Coverter.py
+python3 Unit_Converter.py
 ```
 ## License
 
